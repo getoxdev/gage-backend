@@ -24,4 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('test/',views.temp_here,name='temp_here'),
     path('health/', include('health_check.urls')),
+    path('factorial/<int:n>/', views.factorial_with_cache, name='factorial_with_cache'),
 ]
